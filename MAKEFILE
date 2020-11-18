@@ -1,0 +1,11 @@
+TASM_OPTIONS = /m3
+
+animate.com:    fill.com
+                compack fill.com animate.com "Copyright (c) 1995 Mikko Reinikainen, schwartz@cute.fi"
+
+fill.com:       fill.obj
+                tlink /t fill, fill
+
+fill.obj:       fill.asm
+                tasm $(TASM_OPTIONS) fill
+
