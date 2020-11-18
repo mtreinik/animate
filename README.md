@@ -6,8 +6,7 @@ in Helsinki in 1995.
 In [demoscene](https://en.wikipedia.org/wiki/Demoscene) a **4kb intro** is a computer program that creates multimedia 
 art and is at most 4096 bytes in size.
  
-Animate is discussed at [pouët.net](https://www.pouet.net/prod.php?which=2859) and you can   
-[watch it on YouTube](https://www.youtube.com/watch?v=Lij1WjjjNw8).  
+Animate is discussed at [pouët.net](https://www.pouet.net/prod.php?which=2859) and you can [watch it on YouTube](https://www.youtube.com/watch?v=Lij1WjjjNw8).  
  
 The program and its source code is released here under the MIT license by the sole author, Mikko Reinikainen aka 
 schwartz.
@@ -86,7 +85,7 @@ This is flag is used to break out of animation loops and jump to the end of the 
 
 All 3D graphics are drawn into a virtual [framebuffer](https://en.wikipedia.org/wiki/Framebuffer) that uses a 
 resolution of 160x100 pixels.  The frame buffer is upsampled with interpolation to 320x200 when the image is copied to 
-actual video memory in `bltscreen. A lower resolution is used to speed up graphics performance. Actually each line of 
+actual video memory by `bltscreen`. A lower resolution is used to speed up graphics performance. Actually each line of 
 the framebuffer is 256 pixels long for optimiziation reasons, but only 160 pixels per line are used.  
 
 3D graphics consist of [Texture mapped](https://en.wikipedia.org/wiki/Texture_mapping) quadrilateral polygons that are 
